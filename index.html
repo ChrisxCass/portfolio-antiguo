@@ -285,7 +285,7 @@
     <h2 class="contact__title">
         Contáctame
     </h2>
-    <form action="https://formsubmit.co/christiancasafrancarocha@gmail.com" method="POST" class="contact__form" target="_BLANK">
+    <form class="contact__form">
         <div class="contact__flex">
         <div class="contact__inputs">
             <input class="contact__input" type="text" name="form__name" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" required>
@@ -293,13 +293,18 @@
             <input class="contact__input" type="email" name="form__email" placeholder="Correo" pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$" required>
         </div>
 
-        <textarea  class="contact__input contact__text" name="form__text" placeholder="Tu mensaje..." maxlength="1000"></textarea>
+        <textarea  class="contact__input contact__text" name="form__text" placeholder="Tu mensaje..." maxlength="1000" required></textarea>
         
     </div>
         <div class="contact__div-submit">
             <input class="contact__input contact__submit" type="submit" value="Enviar">
         </div>
-        
+
+        <div class="contact-form-loader none">
+            <img src="./assets/circles.svg" alt="Cargando">
+        </div>
+        <div class="contact-form-response none">
+        </div>
     </form>
 </section>
 

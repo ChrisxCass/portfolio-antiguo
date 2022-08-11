@@ -624,6 +624,20 @@ transition: all .1s ease-in-out;
    
   }
 
+  .contact-form-loader,
+  .contact-form-response{
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: var(--white-color);
+  }
+  
+ 
+  
+  .none{
+      display: none;
+  }
+
 /* *******************  SOCIALS  *************************** */
 
 .socials{
